@@ -13,15 +13,15 @@
 			let vOutput = "";
 			let y=0;
 			let x=1;	
-			let count = 1;
+			let zahler = 1;
 			vOutput = "Jetzt kommt eine Wertetabelle...<br>";		
 			vOutput = vOutput + "<table border=1>";	
 			vOutput = vOutput + "<tr>	<th>Zahl</td>		</tr>" +"<td>"+ "1" +"</td>";
 
 			while (x <= Zahl) {
-				A = y + count;
-				y = count;
-				count = A;
+				A = y + zahler;
+				y = zahler;
+				zahler = A;
 			vOutput = vOutput + "<tr> <td>"+A+"</td>" + "</tr>" ;
 
 			x++;
@@ -36,7 +36,7 @@
 	</head>
 
 	<body>
-		<h1>Fibonacci</h1>
+		<h1>Fibonacci Reihenfolge</h1>
 		Gib eine Zahl an <input id="idInput" type="text" value="10"><br><br>
 		<button onclick="Ausgabe();">Berechne!</button><br><br>
 		<div id="idAusgabe"></div>
